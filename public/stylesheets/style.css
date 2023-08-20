@@ -1,0 +1,124 @@
+p {
+  font-family: 'Hind', sans-serif;
+  color: #64707b;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+nav {
+  background: linear-gradient(111.96deg, #2d3a57 21.67%, #2a5873 38%, #26889f 60.93%, #2e8ea0 63.74%, #4ba2a2 75.36%, #5dafa3 85.43%, #63b3a4 92.76%);
+}
+
+.navitems {
+  padding: 5px 20px !important;
+  color: white !important;
+}
+
+.nav-item .navitems::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: #023E73;
+  margin: auto;
+  display: block;
+}
+
+.nav-item .navitems:hover::after {
+  width: 100%;
+  -o-transition: width 0.3s linear;
+  -webkit-transition: width 0.3s linear;
+  -ms-transition: width 0.3s linear;
+  transition: width 0.3s linear;
+}
+
+.navbar-brand {
+  font-family: 'Gugi', cursive;
+  font-weight: 500;
+}
+
+.banner {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+.mensajeBanner {
+  position: absolute;
+  right: 15%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: center;
+}
+
+.ancho {
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.textoNormal {
+  padding: 40px 25px;
+}
+
+.tituloInicial {
+  color: #034C8C;
+  text-align: justify;
+}
+
+.imagenNosotros {
+  z-index: 1;
+  padding: 100px 0;
+  position: relative;
+  background: url(./components/img/banner-1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.tituloNos {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: white;
+  visibility: visible;
+}
+
+
+#piePag {
+  background-color: #212529;
+  padding: 15px 3px;
+}
+
+#piePag #redesSociales {
+  text-align: center;
+  padding-bottom: 25px;
+  color: #26889f;
+}
+
+#piePag #redesSociales .redes {
+  font-size: 24px;
+  color: inherit;
+  border: 1px solid #26889f;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+  margin-top: 25px;
+}
+
+#piePag #redesSociales .redes:hover {
+  color: #2fd3c4;
+}
+
+#piePag .derechos {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: white;
+}
