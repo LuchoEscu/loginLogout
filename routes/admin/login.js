@@ -6,7 +6,7 @@ var usuariosModel = require('../../models/usuarioModel');
 router.get('/', function (req, res, next) {
   let user = Boolean(req.session.id_usuario);
   if(user){
-    res.redirect('/admin/inicio');
+    res.redirect('/admin/productos');
   } else {
     res.render('admin/login', {
       layout: 'admin/layout'
@@ -37,7 +37,7 @@ router.post('/', async (req, res, next) => {
     if (data != undefined) {
       req.session.id_usuario = data.id;
       req.session.nombre = data.usuario;
-      res.redirect('/admin/inicio');
+      res.redirect('/admin/productos');
     } else {
       res.render('admin/login', {
         layout: 'admin/layout',
