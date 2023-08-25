@@ -23,12 +23,12 @@
                     <tr>
                         <td scope="row">{{id}}</td>
                         <td>{{nombre}}</td>
-                        <td>{{precio}}</td>
+                        <td>${{precio}}</td>
                         <td class="tex-end">
-                            <a class="btn btn-seconday" href=""><i class="fa fa-pencil" 
+                            <a class="btn btn-seconday" href="/admin/productos/modificar/{{id}}"><i class="fa fa-pencil" 
                             aria-hidden="true"></i></a>
 
-                            <a class="btn btn-seconday" href=""><i class="fa fa-trash" 
+                            <a class="btn btn-seconday" href="/admin/productos/eliminar/{{id}}"><i class="fa fa-trash" 
                             aria-hidden="true"></i></a>
                         </td>
                     </tr>
